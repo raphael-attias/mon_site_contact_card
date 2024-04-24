@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta viewport pour le rendu responsive -->
+  <title>Contactez-nous</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000; /* couleur de fond noir */
+      color: #fff; /* couleur du texte blanc */
+      overflow: hidden; /* pour empêcher le défilement */
+    }
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: transparent; /* fond transparent pour laisser apparaître le fond en javascript */
+      z-index: -1; /* placer en arrière-plan */
+    }
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .container p {
+      font-size: 24px;
+    }
+    .container h5 {
+      font-size: 18px;
+      text-align: left; /* alignement à gauche */
+      margin: 0 auto; /* centrage horizontal */
+      max-width: 600px; /* largeur maximale */
+    }
+    .container .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .container .btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Media queries pour les écrans de petite taille (smartphones) */
+    @media only screen and (max-width: 600px) {
+      .container {
+        width: 90%; /* Largeur réduite */
+      }
+      .container h5 {
+        font-size: 16px; /* Taille de police réduite */
+      }
+      .container .btn {
+        font-size: 16px; /* Taille de police réduite */
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- particles.js container -->
+<div id="particles-js"></div> 
+<!-- Vos informations -->
+<div class="container">
+  <h1>ATTIAS Raphael</h1>
+  <h3>Secteur : Marseille-Paris-Toulon-Aix</h3>
+  <h5>Étudiant de 19 ans en administration systèmes et réseaux Sportif, polyvalent, créatif et innovant. J'ai atteint un niveau national en voile militaire, démontrant mon engagement et ma détermination. 
+  
+  Ma passion pour la cybersécurité se marie avec ma volonté d'être un atout pour toute entreprise qui valorise l'innovation, la polyvalence et la motivation. Prêt à contribuer à un monde numérique plus sûr et à exceller dans des projets stimulants. Ouvert aux opportunités et aux échanges constructifs</h5>
+  <a href="CV Raphael-ATTIAS.pdf" download class="btn">Télécharger mon CV</a>
+  <a href="mailto:raphael.attias@laplateforme.io" class="btn">Envoyer un mail</a>
+  <a href="https://www.linkedin.com/in/raphael-attias-b3090b298/" class="btn">Mon linkedin</a>
+  
+  <a href="ATTIAS Raphaël.vcf" download class="btn">Prenez ma fiche contact</a><a href="https://github.com/raphael-attias" class="btn">Mon Git Hub</a> <!-- Bouton pour télécharger le fichier VCF -->
+</div>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
